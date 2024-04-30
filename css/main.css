@@ -1,0 +1,81 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+/* Make images easier to work with */
+img,
+picture {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.menu-bars{
+  position: relative;
+  display: none;
+   width: 20px;
+   height: 20px;
+   cursor: pointer;
+   background: url(/Images/Icons/menu.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+  height: 300px;
+  color: #fff;
+  background-color: #000;
+}
+
+
+
+section{
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media  screen and (max-width: 770px) {
+  nav .menu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    top: 55px;
+    right: 0;
+    width: 0;
+    background: gray;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    transition: width 1s ease;
+  }
+
+  .menu-bars{
+    display: block;
+  }
+
+
+  
+
+}
